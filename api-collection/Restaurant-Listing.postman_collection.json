@@ -1,0 +1,1563 @@
+{
+	"info": {
+		"_postman_id": "5eaef3d1-0f24-4d3b-b5d7-433a098371a9",
+		"name": "Restaurant-Listing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12938123"
+	},
+	"item": [
+		{
+			"name": "AuthRoutes",
+			"item": [
+				{
+					"name": "Register-User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\" : \"deepakkt2032\",\r\n  \"password\" : \"depak123\",\r\n  \"role\" : \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/auth/register",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "admin",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"username\" : \"deepakkt2032\",\r\n  \"password\" : \"depak123\",\r\n  \"role\" : \"admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BaseURL}}/auth/register",
+									"host": [
+										"{{BaseURL}}"
+									],
+									"path": [
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "42"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2a-nMoFx54+czTntmSLXl3mqIsZV4A\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 08:15:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User registered successfully\"\n}"
+						},
+						{
+							"name": "businessOwner",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"username\" : \"samkt2032\",\r\n  \"password\" : \"sam123\",\r\n  \"role\" : \"businessOwner\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BaseURL}}/auth/register",
+									"host": [
+										"{{BaseURL}}"
+									],
+									"path": [
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "42"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2a-nMoFx54+czTntmSLXl3mqIsZV4A\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 08:16:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User registered successfully\"\n}"
+						},
+						{
+							"name": "user",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"username\" : \"ramkt2032\",\r\n  \"password\" : \"ram123\",\r\n  \"role\" : \"user\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BaseURL}}/auth/register",
+									"host": [
+										"{{BaseURL}}"
+									],
+									"path": [
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "42"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2a-nMoFx54+czTntmSLXl3mqIsZV4A\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 08:17:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User registered successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\" : \"deepakkt2032\",\r\n  \"password\" : \"depak123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/auth/login",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"username\" : \"deepakkt2032\",\r\n  \"password\" : \"depak123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BaseURL}}/auth/login",
+									"host": [
+										"{{BaseURL}}"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "195"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c3-TnIinesOLK164G6oBHaxD6cK5jI\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 08:18:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRlZXBha2t0MjAzMiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcwOTI4MTEyNSwiZXhwIjoxNzA5Mjg0NzI1fQ.WhtbfZC3-nLWl3_CFaqKMz__c9X5HdAwVF1gvyr0_TU\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "BusinessListing",
+			"item": [
+				{
+					"name": "ReviewSystem",
+					"item": [
+						{
+							"name": "PostReviewByUser",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{JwtToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"rating\" : 5,\r\n  \"comment\" : \"Very Good service and hygienic food\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BaseURL}}/business-listings/5/reviews",
+									"host": [
+										"{{BaseURL}}"
+									],
+									"path": [
+										"business-listings",
+										"5",
+										"reviews"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "forbiddenForAdminRole",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"rating\" : 5,\r\n  \"comment\" : \"Very Good service and hygienic food\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BaseURL}}/business-listings/5/reviews",
+											"host": [
+												"{{BaseURL}}"
+											],
+											"path": [
+												"business-listings",
+												"5",
+												"reviews"
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "21"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"15-TLNzmZqKxaTuFdX/dVWWPBu44/c\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 01 Mar 2024 08:37:09 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": \"Forbidden\"\n}"
+								},
+								{
+									"name": "successForUserRole",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"rating\" : 5,\r\n  \"comment\" : \"Very Good service and hygienic food\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BaseURL}}/business-listings/5/reviews",
+											"host": [
+												"{{BaseURL}}"
+											],
+											"path": [
+												"business-listings",
+												"5",
+												"reviews"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "225"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"e1-wIrgcSuDzmK1Xz6JEKeAcAfSsv0\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 01 Mar 2024 08:38:48 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Review created successfully\",\n    \"data\": {\n        \"id\": 5,\n        \"rating\": 5,\n        \"comment\": \"Very Good service and hygienic food\",\n        \"businessId\": 5,\n        \"updatedAt\": \"2024-03-01T08:38:48.297Z\",\n        \"createdAt\": \"2024-03-01T08:38:48.297Z\",\n        \"response\": null\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "GetReviewByBusinessID",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{JwtToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BaseURL}}/business-listings/:id/reviews",
+									"host": [
+										"{{BaseURL}}"
+									],
+									"path": [
+										"business-listings",
+										":id",
+										"reviews"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "GetReviewByBusinessID",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BaseURL}}/business-listings/:id/reviews",
+											"host": [
+												"{{BaseURL}}"
+											],
+											"path": [
+												"business-listings",
+												":id",
+												"reviews"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "525"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"20d-deRplCfc+s7cca4ptg+l8EWnYYw\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 01 Mar 2024 08:41:05 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"id\": 3,\n            \"rating\": 5,\n            \"comment\": \"Good service\",\n            \"businessId\": 5,\n            \"response\": null,\n            \"createdAt\": \"2024-02-29T21:29:03.583Z\",\n            \"updatedAt\": \"2024-02-29T21:32:05.978Z\"\n        },\n        {\n            \"id\": 4,\n            \"rating\": 5,\n            \"comment\": \"Good service ljdkajsdkajok ghj\",\n            \"businessId\": 5,\n            \"response\": \"Thank you qjhl\",\n            \"createdAt\": \"2024-02-29T21:32:16.923Z\",\n            \"updatedAt\": \"2024-02-29T21:40:56.794Z\"\n        },\n        {\n            \"id\": 5,\n            \"rating\": 5,\n            \"comment\": \"Very Good service and hygienic food\",\n            \"businessId\": 5,\n            \"response\": null,\n            \"createdAt\": \"2024-03-01T08:38:48.297Z\",\n            \"updatedAt\": \"2024-03-01T08:38:48.297Z\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "AddResponseToReviewByBusinessOwner",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"response\" : \"Thank you. Keep Visiting us\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BaseURL}}/business-listings/:id/reviews/:reviewid/response",
+									"host": [
+										"{{BaseURL}}"
+									],
+									"path": [
+										"business-listings",
+										":id",
+										"reviews",
+										":reviewid",
+										"response"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5"
+										},
+										{
+											"key": "reviewid",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "ReviewNotFoundCase",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"response\" : \"Thank you. Keep Visiting us\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BaseURL}}/business-listings/:id/reviews/:reviewid/response",
+											"host": [
+												"{{BaseURL}}"
+											],
+											"path": [
+												"business-listings",
+												":id",
+												"reviews",
+												":reviewid",
+												"response"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5"
+												},
+												{
+													"key": "reviewid",
+													"value": "3"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "54"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"36-GYjijmgLmOX7QXLrUB2T0HAD+fA\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 01 Mar 2024 08:48:57 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": \"Review not found for this business listing\"\n}"
+								},
+								{
+									"name": "AddResponseSuccessCase",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"response\" : \"Thank you. Keep Visiting us\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BaseURL}}/business-listings/:id/reviews/:reviewid/response",
+											"host": [
+												"{{BaseURL}}"
+											],
+											"path": [
+												"business-listings",
+												":id",
+												"reviews",
+												":reviewid",
+												"response"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5"
+												},
+												{
+													"key": "reviewid",
+													"value": "3"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "227"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"e3-We3EbImSlJhc0X73PMOeK51KSfA\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 01 Mar 2024 08:50:19 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Response added successfully\",\n    \"data\": {\n        \"id\": 3,\n        \"rating\": 5,\n        \"comment\": \"Good service\",\n        \"businessId\": 5,\n        \"response\": \"Thank you. Keep Visiting us\",\n        \"createdAt\": \"2024-02-29T21:29:03.583Z\",\n        \"updatedAt\": \"2024-03-01T08:50:19.815Z\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "UpdateReview/Response",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{JwtToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"response\" : \"Thanks\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BaseURL}}/business-listings/:id/reviews/:reviewid/response",
+									"host": [
+										"{{BaseURL}}"
+									],
+									"path": [
+										"business-listings",
+										":id",
+										"reviews",
+										":reviewid",
+										"response"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5"
+										},
+										{
+											"key": "reviewid",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "UpdateReview/Response",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"response\" : \"Thanks\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BaseURL}}/business-listings/:id/reviews/:reviewid/response",
+											"host": [
+												"{{BaseURL}}"
+											],
+											"path": [
+												"business-listings",
+												":id",
+												"reviews",
+												":reviewid",
+												"response"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5"
+												},
+												{
+													"key": "reviewid",
+													"value": "3"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "208"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"d0-OcuNYSiN3/vVYm2YpZrf6f/w6Yo\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 01 Mar 2024 08:59:49 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Response updated successfully\",\n    \"data\": {\n        \"id\": 3,\n        \"rating\": 5,\n        \"comment\": \"Good service\",\n        \"businessId\": 5,\n        \"response\": \"Thanks\",\n        \"createdAt\": \"2024-02-29T21:29:03.583Z\",\n        \"updatedAt\": \"2024-03-01T08:59:49.245Z\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete Review",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{JwtToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"response\" : \"Thanks\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BaseURL}}/business-listings/:id/reviews/:reviewid/response",
+									"host": [
+										"{{BaseURL}}"
+									],
+									"path": [
+										"business-listings",
+										":id",
+										"reviews",
+										":reviewid",
+										"response"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5"
+										},
+										{
+											"key": "reviewid",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete Review",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"response\" : \"Thanks\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BaseURL}}/business-listings/:id/reviews/:reviewid/response",
+											"host": [
+												"{{BaseURL}}"
+											],
+											"path": [
+												"business-listings",
+												":id",
+												"reviews",
+												":reviewid",
+												"response"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5"
+												},
+												{
+													"key": "reviewid",
+													"value": "3"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "43"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"2b-tTQpNBpXJ2FhUyXhr8Ruxm+wj1Q\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 01 Mar 2024 09:02:22 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Response deleted successfully\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "AddBusiness",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/business-listings/",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"business-listings",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "AddBusiness",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Banglore Restaurant\",\r\n  \"businessPhone\": \"+918787878787\",\r\n  \"city\": \"Banglore City\",\r\n  \"address\": \"123 Main Street, Avenue Road, Banglore\",\r\n  \"images\": [\r\n    \"https://testimage.com/image1.jpg\",\r\n    \"https://testimage.com/image2.jpg\"\r\n  ]\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BaseURL}}/business-listings",
+									"host": [
+										"{{BaseURL}}"
+									],
+									"path": [
+										"business-listings"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "361"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"169-PLdCjPVcDLimyuA+t4491drXlKU\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 08:23:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Business listing created successfully\",\n    \"data\": {\n        \"id\": 7,\n        \"name\": \"Banglore Restaurant\",\n        \"businessPhone\": \"+918787878787\",\n        \"city\": \"Banglore City\",\n        \"address\": \"123 Main Street, Avenue Road, Banglore\",\n        \"images\": [\n            \"https://testimage.com/image1.jpg\",\n            \"https://testimage.com/image2.jpg\"\n        ],\n        \"updatedAt\": \"2024-03-01T08:23:55.198Z\",\n        \"createdAt\": \"2024-03-01T08:23:55.198Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "GetAllBusiness",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JwtToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/business-listings",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"business-listings"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GetAllBusiness",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BaseURL}}/business-listings",
+									"host": [
+										"{{BaseURL}}"
+									],
+									"path": [
+										"business-listings"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1501"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5dd-YjiUfGRF3lM7yVuQl51SXSsWekY\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 08:26:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 2,\n            \"name\": \"Banglore Restaurant\",\n            \"businessPhone\": \"+919321826287\",\n            \"city\": \"Mysore City\",\n            \"address\": \"123 Main Street, Avenue Road, Banglore\",\n            \"images\": [\n                \"https://example.com/image1.jpg\",\n                \"https://example.com/image2.jpg\"\n            ],\n            \"createdAt\": \"2024-02-29T19:52:49.184Z\",\n            \"updatedAt\": \"2024-02-29T19:56:42.747Z\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Banglore Restaurant\",\n            \"businessPhone\": \"+919321826287\",\n            \"city\": \"Mysore City\",\n            \"address\": \"123 Main Street, Avenue Road, Banglore\",\n            \"images\": [\n                \"https://example.com/image1.jpg\",\n                \"https://example.com/image2.jpg\"\n            ],\n            \"createdAt\": \"2024-02-29T20:22:00.463Z\",\n            \"updatedAt\": \"2024-02-29T20:22:00.463Z\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Banglore Restaurant\",\n            \"businessPhone\": \"+919321826287\",\n            \"city\": \"Mysore City\",\n            \"address\": \"123 Main Street, Avenue Road, Banglore\",\n            \"images\": [\n                \"https://example.com/image1.jpg\",\n                \"https://example.com/image2.jpg\"\n            ],\n            \"createdAt\": \"2024-02-29T20:28:19.305Z\",\n            \"updatedAt\": \"2024-02-29T20:28:19.305Z\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Banglore Restaurant\",\n            \"businessPhone\": \"+919321826287\",\n            \"city\": \"Mysore City\",\n            \"address\": \"123 Main Street, Avenue Road, Banglore\",\n            \"images\": [\n                \"https://example.com/image1.jpg\",\n                \"https://example.com/image2.jpg\"\n            ],\n            \"createdAt\": \"2024-02-29T19:53:26.322Z\",\n            \"updatedAt\": \"2024-02-29T20:37:11.486Z\"\n        },\n        {\n            \"id\": 7,\n            \"name\": \"Banglore Restaurant\",\n            \"businessPhone\": \"+918787878787\",\n            \"city\": \"Banglore City\",\n            \"address\": \"123 Main Street, Avenue Road, Banglore\",\n            \"images\": [\n                \"https://testimage.com/image1.jpg\",\n                \"https://testimage.com/image2.jpg\"\n            ],\n            \"createdAt\": \"2024-03-01T08:23:55.198Z\",\n            \"updatedAt\": \"2024-03-01T08:23:55.198Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "UpdateBusiness",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Banglore Restaurant\",\r\n  \"businessPhone\": \"+919878987889\",\r\n  \"city\": \"Whitefield\",\r\n  \"address\": \"123 Main Street, Avenue Road, Banglore\",\r\n  \"images\": [\r\n    \"https://test/image1.jpg\",\r\n    \"https://test/image2.jpg\"\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/business-listings/:id",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"business-listings",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "UpdateBusiness",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Banglore Restaurant\",\r\n  \"businessPhone\": \"+919878987889\",\r\n  \"city\": \"Whitefield\",\r\n  \"address\": \"123 Main Street, Avenue Road, Banglore\",\r\n  \"images\": [\r\n    \"https://test/image1.jpg\",\r\n    \"https://test/image2.jpg\"\r\n  ]\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BaseURL}}/business-listings/:id",
+									"host": [
+										"{{BaseURL}}"
+									],
+									"path": [
+										"business-listings",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "7"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "340"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"154-N4OjUT71EOYROKlSVBS2uotKH/I\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 08:30:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Business listing updated successfully\",\n    \"data\": {\n        \"id\": 7,\n        \"name\": \"Banglore Restaurant\",\n        \"businessPhone\": \"+919878987889\",\n        \"city\": \"Whitefield\",\n        \"address\": \"123 Main Street, Avenue Road, Banglore\",\n        \"images\": [\n            \"https://test/image1.jpg\",\n            \"https://test/image2.jpg\"\n        ],\n        \"createdAt\": \"2024-03-01T08:23:55.198Z\",\n        \"updatedAt\": \"2024-03-01T08:30:00.258Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "GetBusinessByID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JwtToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/business-listings/:id",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"business-listings",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GetBusinessByID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BaseURL}}/business-listings/:id",
+									"host": [
+										"{{BaseURL}}"
+									],
+									"path": [
+										"business-listings",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "7"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "290"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"122-uWHy54KthcranKtfT/QhmWWY+Rs\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 08:31:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": 7,\n        \"name\": \"Banglore Restaurant\",\n        \"businessPhone\": \"+919878987889\",\n        \"city\": \"Whitefield\",\n        \"address\": \"123 Main Street, Avenue Road, Banglore\",\n        \"images\": [\n            \"https://test/image1.jpg\",\n            \"https://test/image2.jpg\"\n        ],\n        \"createdAt\": \"2024-03-01T08:23:55.198Z\",\n        \"updatedAt\": \"2024-03-01T08:30:00.258Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "DeleteBusiness",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JwtToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/business-listings/:id",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"business-listings",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "DeleteBusiness",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BaseURL}}/business-listings/:id",
+									"host": [
+										"{{BaseURL}}"
+									],
+									"path": [
+										"business-listings",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "51"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"33-Ftz+9nogJpB6yHuzXHMET+J3Kgc\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 08:33:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Business listing deleted successfully\"\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BaseURL",
+			"value": "http://localhost:8081",
+			"type": "string"
+		},
+		{
+			"key": "JwtToken",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRlZXBha2t0MjAzMiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcwOTI4MTEyNSwiZXhwIjoxNzA5Mjg0NzI1fQ.WhtbfZC3-nLWl3_CFaqKMz__c9X5HdAwVF1gvyr0_TU",
+			"type": "string"
+		}
+	]
+}
