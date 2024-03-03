@@ -7,7 +7,6 @@ const businessRoutes = require('../src/routes/businessRoutes');
 require("dotenv").config()
 
 const app = express();
-console.log("\nDeepaj process.env.PORT ", process.env.PORT, process.env.jwtSecret)
 const PORT = process.env.PORT || 8081;
 
 // Middleware
@@ -20,7 +19,6 @@ app.use(businessRoutes);
 
 // Sync Sequelize models with the database
 sequelize.sync({ force: false }).then(() => {
-  console.log('Database and tables synced');
   // Start the server
   app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
