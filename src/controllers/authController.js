@@ -2,9 +2,14 @@ const express = require('express');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const User = require('../models/user');
-const { jwtSecret } = require('../../config/config');
+// const { jwtSecret } = require('../../config/config');
+require("dotenv").config();
 
 const router = express.Router();
+
+
+const jwtSecret = process.env.jwtSecret || "Deepak";
+
 
 
 
@@ -30,7 +35,7 @@ router.post('/login', async (req, res) => {
       return res.status(401).json({ error: 'Invalid credentials' });
     }
 
-    const token = jwt.sign({ username: user.username, role: user.role }, jwtSecret, { expiresIn: '1h' });
+    const token = jwt.sign({ userId: user.id, username: user.username, role: user.role }, jwtSecret, { expiresIn: '1h' });
     res.json({ token });
   } catch (error) {
     console.error(error);

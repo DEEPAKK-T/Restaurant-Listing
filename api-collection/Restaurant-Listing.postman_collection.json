@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"username\" : \"deepakkt2032\",\r\n  \"password\" : \"depak123\",\r\n  \"role\" : \"admin\"\r\n}",
+							"raw": "{\r\n  \"username\" : \"deepakkttt2032\",\r\n  \"password\" : \"deepak123\",\r\n  \"role\" : \"admin\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -239,7 +239,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"username\" : \"deepakkt2032\",\r\n  \"password\" : \"depak123\"\r\n}",
+							"raw": "{\r\n  \"username\" : \"deepakkttt2032\",\r\n  \"password\" : \"depak123\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -358,13 +358,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{BaseURL}}/business-listings/5/reviews",
+									"raw": "{{BaseURL}}/business-listings/2/reviews",
 									"host": [
 										"{{BaseURL}}"
 									],
 									"path": [
 										"business-listings",
-										"5",
+										"2",
 										"reviews"
 									]
 								}
@@ -437,7 +437,7 @@
 									"body": "{\n    \"error\": \"Forbidden\"\n}"
 								},
 								{
-									"name": "successForUserRole",
+									"name": "PostReviewByUser",
 									"originalRequest": {
 										"method": "POST",
 										"header": [],
@@ -451,14 +451,20 @@
 											}
 										},
 										"url": {
-											"raw": "{{BaseURL}}/business-listings/5/reviews",
+											"raw": "{{BaseURL}}/business-listings/:id/reviews",
 											"host": [
 												"{{BaseURL}}"
 											],
 											"path": [
 												"business-listings",
-												"5",
+												":id",
 												"reviews"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "2"
+												}
 											]
 										}
 									},
@@ -480,15 +486,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "225"
+											"value": "237"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"e1-wIrgcSuDzmK1Xz6JEKeAcAfSsv0\""
+											"value": "W/\"ed-LGouEW2q3oWNBxxo59aW5+vViDU\""
 										},
 										{
 											"key": "Date",
-											"value": "Fri, 01 Mar 2024 08:38:48 GMT"
+											"value": "Sun, 03 Mar 2024 09:30:56 GMT"
 										},
 										{
 											"key": "Connection",
@@ -500,7 +506,7 @@
 										}
 									],
 									"cookie": [],
-									"body": "{\n    \"message\": \"Review created successfully\",\n    \"data\": {\n        \"id\": 5,\n        \"rating\": 5,\n        \"comment\": \"Very Good service and hygienic food\",\n        \"businessId\": 5,\n        \"updatedAt\": \"2024-03-01T08:38:48.297Z\",\n        \"createdAt\": \"2024-03-01T08:38:48.297Z\",\n        \"response\": null\n    }\n}"
+									"body": "{\n    \"message\": \"Review created successfully\",\n    \"data\": {\n        \"id\": 7,\n        \"rating\": 5,\n        \"comment\": \"Very Good service and hygienic food\",\n        \"userId\": 10,\n        \"businessId\": 2,\n        \"updatedAt\": \"2024-03-03T09:30:56.550Z\",\n        \"createdAt\": \"2024-03-03T09:30:56.550Z\",\n        \"response\": null\n    }\n}"
 								}
 							]
 						},
@@ -532,7 +538,7 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": "5"
+											"value": "2"
 										}
 									]
 								}
@@ -556,7 +562,7 @@
 											"variable": [
 												{
 													"key": "id",
-													"value": "5"
+													"value": "2"
 												}
 											]
 										}
@@ -579,15 +585,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "525"
+											"value": "755"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"20d-deRplCfc+s7cca4ptg+l8EWnYYw\""
+											"value": "W/\"2f3-CvE9KsKrtaz0Bij9qzhkd0AgrEk\""
 										},
 										{
 											"key": "Date",
-											"value": "Fri, 01 Mar 2024 08:41:05 GMT"
+											"value": "Sun, 03 Mar 2024 09:29:59 GMT"
 										},
 										{
 											"key": "Connection",
@@ -599,7 +605,7 @@
 										}
 									],
 									"cookie": [],
-									"body": "{\n    \"data\": [\n        {\n            \"id\": 3,\n            \"rating\": 5,\n            \"comment\": \"Good service\",\n            \"businessId\": 5,\n            \"response\": null,\n            \"createdAt\": \"2024-02-29T21:29:03.583Z\",\n            \"updatedAt\": \"2024-02-29T21:32:05.978Z\"\n        },\n        {\n            \"id\": 4,\n            \"rating\": 5,\n            \"comment\": \"Good service ljdkajsdkajok ghj\",\n            \"businessId\": 5,\n            \"response\": \"Thank you qjhl\",\n            \"createdAt\": \"2024-02-29T21:32:16.923Z\",\n            \"updatedAt\": \"2024-02-29T21:40:56.794Z\"\n        },\n        {\n            \"id\": 5,\n            \"rating\": 5,\n            \"comment\": \"Very Good service and hygienic food\",\n            \"businessId\": 5,\n            \"response\": null,\n            \"createdAt\": \"2024-03-01T08:38:48.297Z\",\n            \"updatedAt\": \"2024-03-01T08:38:48.297Z\"\n        }\n    ]\n}"
+									"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"rating\": 5,\n            \"comment\": \"Good service ok\",\n            \"businessId\": 2,\n            \"userId\": 10,\n            \"response\": null,\n            \"createdAt\": \"2024-03-03T08:35:00.926Z\",\n            \"updatedAt\": \"2024-03-03T08:35:00.926Z\"\n        },\n        {\n            \"id\": 2,\n            \"rating\": 5,\n            \"comment\": \"Good service ok ok\",\n            \"businessId\": 2,\n            \"userId\": 9,\n            \"response\": null,\n            \"createdAt\": \"2024-03-03T08:36:12.876Z\",\n            \"updatedAt\": \"2024-03-03T08:36:12.876Z\"\n        },\n        {\n            \"id\": 3,\n            \"rating\": 5,\n            \"comment\": \"Good service ljdkajsdkajok ghj\",\n            \"businessId\": 2,\n            \"userId\": 10,\n            \"response\": \"Thank you qjhl 30948ksajd32908sjdk\",\n            \"createdAt\": \"2024-03-03T08:44:03.756Z\",\n            \"updatedAt\": \"2024-03-03T09:12:34.620Z\"\n        },\n        {\n            \"id\": 6,\n            \"rating\": 5,\n            \"comment\": \"Very Good service and hygienic food\",\n            \"businessId\": 2,\n            \"userId\": 10,\n            \"response\": null,\n            \"createdAt\": \"2024-03-03T09:29:17.055Z\",\n            \"updatedAt\": \"2024-03-03T09:29:17.055Z\"\n        }\n    ]\n}"
 								}
 							]
 						},
@@ -721,7 +727,7 @@
 									"body": "{\n    \"error\": \"Review not found for this business listing\"\n}"
 								},
 								{
-									"name": "AddResponseSuccessCase",
+									"name": "ForbiddenCaseForUserRole",
 									"originalRequest": {
 										"method": "POST",
 										"header": [],
@@ -758,8 +764,8 @@
 											]
 										}
 									},
-									"status": "OK",
-									"code": 200,
+									"status": "Forbidden",
+									"code": 403,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
@@ -776,15 +782,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "227"
+											"value": "21"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"e3-We3EbImSlJhc0X73PMOeK51KSfA\""
+											"value": "W/\"15-TLNzmZqKxaTuFdX/dVWWPBu44/c\""
 										},
 										{
 											"key": "Date",
-											"value": "Fri, 01 Mar 2024 08:50:19 GMT"
+											"value": "Sun, 03 Mar 2024 09:42:18 GMT"
 										},
 										{
 											"key": "Connection",
@@ -796,67 +802,16 @@
 										}
 									],
 									"cookie": [],
-									"body": "{\n    \"message\": \"Response added successfully\",\n    \"data\": {\n        \"id\": 3,\n        \"rating\": 5,\n        \"comment\": \"Good service\",\n        \"businessId\": 5,\n        \"response\": \"Thank you. Keep Visiting us\",\n        \"createdAt\": \"2024-02-29T21:29:03.583Z\",\n        \"updatedAt\": \"2024-03-01T08:50:19.815Z\"\n    }\n}"
-								}
-							]
-						},
-						{
-							"name": "UpdateReview/Response",
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": [
-										{
-											"key": "token",
-											"value": "{{JwtToken}}",
-											"type": "string"
-										}
-									]
+									"body": "{\n    \"error\": \"Forbidden\"\n}"
 								},
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n  \"response\" : \"Thanks\"\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{BaseURL}}/business-listings/:id/reviews/:reviewid/response",
-									"host": [
-										"{{BaseURL}}"
-									],
-									"path": [
-										"business-listings",
-										":id",
-										"reviews",
-										":reviewid",
-										"response"
-									],
-									"variable": [
-										{
-											"key": "id",
-											"value": "5"
-										},
-										{
-											"key": "reviewid",
-											"value": "3"
-										}
-									]
-								}
-							},
-							"response": [
 								{
-									"name": "UpdateReview/Response",
+									"name": "AddResponse",
 									"originalRequest": {
-										"method": "PUT",
+										"method": "POST",
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n  \"response\" : \"Thanks\"\r\n}",
+											"raw": "{\r\n  \"response\" : \"Thank you. Keep Visiting us\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -878,7 +833,134 @@
 											"variable": [
 												{
 													"key": "id",
+													"value": "1"
+												},
+												{
+													"key": "reviewid",
 													"value": "5"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "245"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"f5-1BdgurJwdKM2bcRrUfZfoTXNaK4\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 03 Mar 2024 09:45:14 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Response added successfully\",\n    \"data\": {\n        \"id\": 5,\n        \"rating\": 5,\n        \"comment\": \"Good service ok ok\",\n        \"businessId\": 1,\n        \"userId\": 11,\n        \"response\": \"Thank you. Keep Visiting us\",\n        \"createdAt\": \"2024-03-03T08:47:13.252Z\",\n        \"updatedAt\": \"2024-03-03T09:45:14.262Z\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "UpdateReviewByUser",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{JwtToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"rating\" : 4,\r\n  \"comment\" : \"Good service. Must Visit\",\r\n  \"response\" : \"Thanks for the review\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BaseURL}}/business-listings/:id/reviews/:reviewid",
+									"host": [
+										"{{BaseURL}}"
+									],
+									"path": [
+										"business-listings",
+										":id",
+										"reviews",
+										":reviewid"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "2"
+										},
+										{
+											"key": "reviewid",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "UpdateReviewByUser",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"rating\" : 4,\r\n  \"comment\" : \"Good service. Must Visit\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BaseURL}}/business-listings/:id/reviews/:reviewid",
+											"host": [
+												"{{BaseURL}}"
+											],
+											"path": [
+												"business-listings",
+												":id",
+												"reviews",
+												":reviewid"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "2"
 												},
 												{
 													"key": "reviewid",
@@ -905,15 +987,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "208"
+											"value": "258"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"d0-OcuNYSiN3/vVYm2YpZrf6f/w6Yo\""
+											"value": "W/\"102-+ogBSqM2i9Kq13NJgoXm93FYBCA\""
 										},
 										{
 											"key": "Date",
-											"value": "Fri, 01 Mar 2024 08:59:49 GMT"
+											"value": "Sun, 03 Mar 2024 09:34:35 GMT"
 										},
 										{
 											"key": "Connection",
@@ -925,7 +1007,84 @@
 										}
 									],
 									"cookie": [],
-									"body": "{\n    \"message\": \"Response updated successfully\",\n    \"data\": {\n        \"id\": 3,\n        \"rating\": 5,\n        \"comment\": \"Good service\",\n        \"businessId\": 5,\n        \"response\": \"Thanks\",\n        \"createdAt\": \"2024-02-29T21:29:03.583Z\",\n        \"updatedAt\": \"2024-03-01T08:59:49.245Z\"\n    }\n}"
+									"body": "{\n    \"message\": \"Review updated successfully\",\n    \"data\": {\n        \"id\": 3,\n        \"rating\": 4,\n        \"comment\": \"Good service. Must Visit\",\n        \"businessId\": 2,\n        \"userId\": 10,\n        \"response\": \"Thank you qjhl 30948ksajd32908sjdk\",\n        \"createdAt\": \"2024-03-03T08:44:03.756Z\",\n        \"updatedAt\": \"2024-03-03T09:34:35.952Z\"\n    }\n}"
+								},
+								{
+									"name": "UpdateOthersReviewForbidden",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"rating\" : 4,\r\n  \"comment\" : \"Good service. Must Visit\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BaseURL}}/business-listings/:id/reviews/:reviewid",
+											"host": [
+												"{{BaseURL}}"
+											],
+											"path": [
+												"business-listings",
+												":id",
+												"reviews",
+												":reviewid"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "2"
+												},
+												{
+													"key": "reviewid",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "72"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"48-yBHdHDSwcukrXnUXcCp9Me/J91U\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 03 Mar 2024 09:38:51 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": \"Forbidden: You don't have permission to update others review\"\n}"
 								}
 							]
 						},
@@ -954,7 +1113,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{BaseURL}}/business-listings/:id/reviews/:reviewid/response",
+									"raw": "{{BaseURL}}/business-listings/:id/reviews/:reviewid",
 									"host": [
 										"{{BaseURL}}"
 									],
@@ -962,13 +1121,12 @@
 										"business-listings",
 										":id",
 										"reviews",
-										":reviewid",
-										"response"
+										":reviewid"
 									],
 									"variable": [
 										{
 											"key": "id",
-											"value": "5"
+											"value": "2"
 										},
 										{
 											"key": "reviewid",
@@ -978,6 +1136,83 @@
 								}
 							},
 							"response": [
+								{
+									"name": "PermissionErrorCase",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"response\" : \"Thanks\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BaseURL}}/business-listings/:id/reviews/:reviewid",
+											"host": [
+												"{{BaseURL}}"
+											],
+											"path": [
+												"business-listings",
+												":id",
+												"reviews",
+												":reviewid"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "2"
+												},
+												{
+													"key": "reviewid",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "72"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"48-p3YfN2WIK/CinogfbwxlSoJQ9bk\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 03 Mar 2024 09:40:33 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": \"Forbidden: You don't have permission to delete others review\"\n}"
+								},
 								{
 									"name": "Delete Review",
 									"originalRequest": {
@@ -993,7 +1228,7 @@
 											}
 										},
 										"url": {
-											"raw": "{{BaseURL}}/business-listings/:id/reviews/:reviewid/response",
+											"raw": "{{BaseURL}}/business-listings/:id/reviews/:reviewid",
 											"host": [
 												"{{BaseURL}}"
 											],
@@ -1001,13 +1236,12 @@
 												"business-listings",
 												":id",
 												"reviews",
-												":reviewid",
-												"response"
+												":reviewid"
 											],
 											"variable": [
 												{
 													"key": "id",
-													"value": "5"
+													"value": "2"
 												},
 												{
 													"key": "reviewid",
@@ -1034,15 +1268,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "43"
+											"value": "41"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"2b-tTQpNBpXJ2FhUyXhr8Ruxm+wj1Q\""
+											"value": "W/\"29-eJZH9QbGPKzQCQgLPX3JFUdcheo\""
 										},
 										{
 											"key": "Date",
-											"value": "Fri, 01 Mar 2024 09:02:22 GMT"
+											"value": "Sun, 03 Mar 2024 09:41:17 GMT"
 										},
 										{
 											"key": "Connection",
@@ -1054,7 +1288,7 @@
 										}
 									],
 									"cookie": [],
-									"body": "{\n    \"message\": \"Response deleted successfully\"\n}"
+									"body": "{\n    \"message\": \"Review deleted successfully\"\n}"
 								}
 							]
 						}

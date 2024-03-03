@@ -1,5 +1,7 @@
 const jwt = require("jsonwebtoken")
-const { jwtSecret }= require("../../config/config")
+require("dotenv").config();
+const jwtSecret = process.env.jwtSecret || "Deepak";
+
 
 
 // Middleware to verify JWT and extract user information
@@ -11,8 +13,9 @@ const authenticateJWT = (req, res, next) => {
     const accessToken = token.split(' ')[1];
     console.log("\n AccessToken")
     jwt.verify(accessToken, jwtSecret, (err, user) => {
-      if (err) return res.status(403).json({ error: 'Forbidden kjsdhajs' });
+      if (err) return res.status(403).json({ error: 'Forbidden' });
       req.user = user;
+      console.log("\nDeepak req.user object inside authenticate middle", req.user)
       next();
     });
   };

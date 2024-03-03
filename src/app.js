@@ -4,8 +4,10 @@ const { json } = require('express');
 const sequelize = require('../src/utils/database');
 const authRoutes = require('../src/routes/authRoutes');
 const businessRoutes = require('../src/routes/businessRoutes');
+require("dotenv").config()
 
 const app = express();
+console.log("\nDeepaj process.env.PORT ", process.env.PORT, process.env.jwtSecret)
 const PORT = process.env.PORT || 8081;
 
 // Middleware

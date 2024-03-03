@@ -36,6 +36,7 @@ This web application provides a platform for users to explore various restaurant
    ```bash
    git clone https://github.com/DEEPAKK-T/Restaurant-Listing.git
    cd Restaurant-Listing
+   create .env file in root directory
 
 2. Install dependencies
 
