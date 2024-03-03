@@ -17,7 +17,6 @@ const checkUserRole = (allowedRoles) => (req, res, next) => {
 // Create a business listing
 router.post('/business-listings', authenticateJwt, checkUserRole(['businessOwner', 'admin']), async (req, res) => {
   try {
-    console.log("\nbusinesslisting port req.body", req.body)
     const { name, businessPhone, city, address, images } = req.body;
     const businessListing = await BusinessListing.create({
       name,
@@ -99,7 +98,6 @@ router.post('/business-listings/:businessId/reviews', authenticateJwt, checkUser
   try {
     const { rating, comment } = req.body;
     const { businessId } = req.params;
-    console.log("\nInd=side create review req.user.id", req.user)
 
     if (req.user.role === 'businessOwner') {
       // You can only delete your own responses
@@ -151,12 +149,7 @@ router.delete('/business-listings/:businessId/reviews/:reviewId', authenticateJw
     if (!review) {
       return res.status(404).json({ error: 'Review not found for this business listing' });
     }
-    console.log("\nDeepak req.user.role", req.user.role)
-    console.log("\n Deepak req.user.id", req.user.userId)
-    console.log("\n Deepak review.userId", review.userId)
 
-
-    //req.user.id !== review.userId
     if (req.user.role === 'businessOwner' && req.user.userId !== review.userId) {
       // businessOwerns can't delete any review
       return res.status(403).json({ error: "Forbidden: You don't have permission to delete review" });
@@ -181,7 +174,6 @@ router.delete('/business-listings/:businessId/reviews/:reviewId', authenticateJw
 router.put('/business-listings/:businessId/reviews/:reviewId', authenticateJwt, checkUserRole(['businessOwner', 'admin', 'user']), async (req, res) => {
   try {
     const { response, comment, rating } = req.body;
-    console.log("\n response ", response)
     const { businessId, reviewId } = req.params;
 
     const review = await Review.findOne({
@@ -192,12 +184,7 @@ router.put('/business-listings/:businessId/reviews/:reviewId', authenticateJwt, 
       return res.status(404).json({ error: 'Review not found for this business listing' });
     }
 
-    // if (req.user.role === 'businessOwner' && req.user.userId !== review.userId) {
-    //   return res.status(403).json({ error: 'Forbidden: You can only update your own responses' });
-    // }
-
     if (req.user.role === 'user' && req.user.userId !== review.userId) {
-      // you can delete only your own reviews
       return res.status(403).json({ error: "Forbidden: You don't have permission to update others review" });
     }
 

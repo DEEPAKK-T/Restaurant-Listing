@@ -76,4 +76,4 @@ This web application provides a platform for users to explore various restaurant
 | Admin          | Yes    | Yes  | Yes    | Yes    |
 
 ## Todo
-- Read secret from .env
+- Integrate migration code to create database
